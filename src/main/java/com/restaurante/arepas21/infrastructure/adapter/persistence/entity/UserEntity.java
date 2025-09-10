@@ -1,4 +1,4 @@
-package com.restaurante.arepas21.infrastructure.adapter.db.entity;
+package com.restaurante.arepas21.infrastructure.adapter.persistence.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,7 +10,7 @@ import lombok.*;
 @NoArgsConstructor 
 @AllArgsConstructor 
 @Builder
-public class User {
+public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,4 +23,5 @@ public class User {
     private String password;
 
     private String role; // opcional: ROLE_USER, ROLE_ADMIN, etc.
+    
 }
