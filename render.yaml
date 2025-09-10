@@ -1,7 +1,7 @@
 services:
   - type: web
     name: arepas21
-    runtime: java
+    runtime: java21
     plan: free
     buildCommand: ./mvnw clean install -DskipTests
     startCommand: java -jar target/*.jar
