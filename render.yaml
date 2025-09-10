@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: arepas21
+    env: java
+    plan: free
+    buildCommand: ./mvnw clean install -DskipTests
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: SERVER_PORT
+        value: 8080
+      - key: DATABASE_URL
+        value: jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?prepareThreshold=0
+      - key: DATABASE_USERNAME
+        value: postgres.elppuzaymcysqklvamss
+      - key: DATABASE_PASSWORD
+        value: G8nz4L3Zn9**
+      - key: JWT_SECRET
+        value: K8#mP$9xQ2vB&nL7wR@3jY6tE5uI0pA4sF1dH8cG9bN2mX7zV5qW3eR6yT0uI9oL4kJ
