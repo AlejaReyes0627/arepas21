@@ -103,6 +103,7 @@ public class SecurityConfig {
         // Permitir orígenes específicos
         configuration.setAllowedOrigins(Arrays.asList(
             "http://localhost:5173",
+            "https://restauranteapp21.netlify.app",
             "http://localhost:3000",
             "http://localhost:8080"
         ));
